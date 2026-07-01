@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div id="geral">
+        <h2>💵Conversor de Moeda</h2>
+        <select id="txtopçao">  
+            <option value="0">Selecione a Moeda desejada</option>
+            <option value="1">1 - Real para Dolar</option>
+            <option value="2">2 - Real para Euro</option>
+        </select>
+        <br>
+        <br>
+        <input type="number" placeholder="Digite um valor em Real" id="txtvalor">
+        
+        <button onclick="converter()" id="butao">Converter</button>
+        <div id="resultado"></div>
+    </div>
+    
+</body>
+</html>
