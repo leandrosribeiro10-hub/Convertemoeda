@@ -1,22 +1,26 @@
-function converter(){
-    let opcao,valor, total;
+function Verificar(){
+let n1,n2;
+n1=document.getElementById("txt").value;
+n2=document.getElementById("txt2").value;
+switch (n2){
+    case "A":
+        alert(n1 +  " Excelente");
+        break;
+    case "B":
 
-    opcao=parseInt(document.getElementById("txtopçao").value);
-    valor=parseFloat(document.getElementById("txtvalor").value);
- 
-   
-    switch (opcao) {
-        
-        case 1:
-            total=valor / 5,19;
-            resultado.innerHTML="o valor convertido para Dólar é de US$ " +total.toFixed(2) ;
-            break;
-        case 2:
-            total=valor / 5,90;
-            resultado.innerHTML="o valor convertido para Euro é de €" +total.toFixed(2);
-            break;
-        default:
-            alert("Opção Invalida");
+        alert(n1 +  " Bom");
+        break;
+    case "C":
 
-    }
+        alert(n1 +  " Regular");
+        break;
+    case "D":
+
+        alert(n1 + " Insuficiente");
+        break;
+    default:
+        alert("Erro perolo")
+}
+
+    
 }
